@@ -1,0 +1,131 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo img {
+    height: 60px;
+    width: 78px;
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 30px;
+}
+
+ul li a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+/* Bird Section - Improved Layout */
+.bird {
+    margin: 140px 40px 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.main {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.imges img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imges img:hover {
+    transform: scale(1.03);
+}
+
+/* Text Styling */
+.pera {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+
+}
+
+.peragraph {
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Cursor Pointer for Summary inside Details */
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .bird {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+}
